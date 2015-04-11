@@ -1,5 +1,4 @@
 package Interfaz;
-
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -11,12 +10,17 @@ import javax.swing.JButton;
  */
 public class AccionBoton extends JButton implements ActionListener {
 	
+	
 	AccionBoton() {
 		super("Search");
 	}
 		
 	public void actionPerformed(ActionEvent e) {
-		System.out.println("Ejecutando");
+		System.out.println();
+		
+		
+		
+
 	}
 
 }
