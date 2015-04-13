@@ -41,7 +41,7 @@ public class ConfiguracionXml {
 		 * Agreagando contenido a los hijos
 		 */
 		maxthreads.addContenido("10");
-		recursivity.addContenido(" 8");
+		recursivity.addContenido("5");
 		reindex.addContenido("8");
 
 		/*

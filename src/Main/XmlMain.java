@@ -1,13 +1,14 @@
 package Main;
 
+import java.io.IOException;
+
 import org.jespxml.excepciones.TagHijoNotFoundException;
 
 import Hilo.ListaEnHilo;
 import Interfaz.Ventana;
-import Interfaz.VentanaPrincipal;
+import Parseo.NewParser;
 import Parseo.Parseo;
-import Xml.CrearXmlUrl;
-import Xml.LeeXmlUrl;
+import Xml.ConfiguracionXml;
 
 /**
  * 
@@ -17,13 +18,15 @@ import Xml.LeeXmlUrl;
  *
  */
 public class XmlMain {
-	public static void main(String[] args) throws TagHijoNotFoundException {
+	public static void main(String[] args) throws TagHijoNotFoundException, IOException {
 		
 //		
 //		/*
 //		 * Creacion de objetos
 //	 */
-		Parseo parsear = new Parseo();
+		//Parseo parsear = new Parseo();
+	//	ConfiguracionXml w = new ConfiguracionXml();
+		
 //		
 //		LeeXmlUrl  url= new LeeXmlUrl();
 //		url.LeeXmlUrl0();
@@ -46,8 +49,9 @@ public class XmlMain {
 //		
 //		System.out.println(Lista.Busca("http://www.google.com/"));
 		
-		
-			
+		//Ventana bVentan = new Ventana();
+		//NewParser a = new NewParser();
+		//Parseo a = new Parseo();
 		}
 		
 		

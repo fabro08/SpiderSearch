@@ -34,20 +34,18 @@ public class ListaEnHilo {
 		url.LeeXmlUrl1();
 		url.LeeXmlUrl2();
 		Lista_Circular_Enlazada Lista = new Lista_Circular_Enlazada();
-		Ventana ventana = new Ventana();
+		//Ventana ventana = new Ventana();
+		Lista.Insertar_Inicio(url.LeeXmlUrl0());
+		Lista.Insertar_Inicio(url.LeeXmlUrl1());
+		Lista.Insertar_Inicio(url.LeeXmlUrl2());
+		//Lista.Insertar_Inicio(ventana.getPalabra());
 
 		while (true) {
 
-			// Lista.Insertar_Inicio(url.LeeXmlUrl0());
-			// Lista.Insertar_Inicio(url.LeeXmlUrl1());
-			// Lista.Insertar_Inicio(url.LeeXmlUrl2());
-			Lista.Insertar_Inicio(ventana.getPalabra());
+			 
 
-			if (ventana.getPalabra().equals("kim")) {
-				System.out.println("Es una peleona");
-			} else {
-				System.out.println("Es el mejor");
-			}
+			System.out.println(Lista.Imprimir());
+
 			
 			try {
 				Thread.sleep(200);

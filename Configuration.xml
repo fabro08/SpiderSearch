@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Spider>
     <maxthreads>10</maxthreads>
-    <recursivity>8</recursivity>
+    <recursivity>5</recursivity>
     <reindex>8</reindex>
 </Spider>
