@@ -5,7 +5,7 @@ import java.io.IOException;
 import org.jespxml.excepciones.TagHijoNotFoundException;
 
 import Hilo.ListaEnHilo;
-import Parseo.NewParser;
+import Parseo.MetaDatos;
 import Parseo.Token;
 
 /**
@@ -17,9 +17,16 @@ import Parseo.Token;
  */
 public class XmlMain {
 	public static void main(String[] args) throws TagHijoNotFoundException, IOException {
-		ListaEnHilo list = new ListaEnHilo();
+	ListaEnHilo list = new ListaEnHilo();
 		
 		//System.out.println(aToken);
 		
+		
+//		NewParser aNewParser = new NewParser();
+//		aNewParser.Data();
+//		System.out.println(aNewParser.Getkeywords());
+//		
+//		Token aToken = new Token(aNewParser.Getkeywords());
+//		System.out.println(aToken.getCantidad());
 	}
 }
