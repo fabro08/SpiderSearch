@@ -22,23 +22,21 @@ public class Token {
 	Nodo siguiente;
 	String tokena = null;
 	
-
 	
-	public  Token(String name){
+	
+	public  Token(String name) {
 		tokens = new StringTokenizer(name, ",");// Recibe un String y lo separa por comas
+				
 		
-		
+	}
+	public void getToken(){
 		while (tokens.hasMoreTokens()) {
-			System.out.println (tokens.nextToken());
-			
-			
-		}
-		
-		
+			 //tokens.nextToken();
+			tokens.nextElement();
+	}
 		
 	}
-	public String getToken(){
-		return tokens.nextToken();
+	public Object gg(){
+		return tokens.nextElement();
 	}
-
 }

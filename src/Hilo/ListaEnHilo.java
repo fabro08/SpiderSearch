@@ -32,12 +32,14 @@ class HiloPrincipal extends Thread {
 public class ListaEnHilo {
 
 	public ListaEnHilo() throws TagHijoNotFoundException, IOException {
-		NewParser aa = new NewParser();
-		aa.Data();
+		NewParser aNewParser = new NewParser();
+		aNewParser.Data();
 		
+		Token aToken = new Token(aNewParser.Getkeywords());
 		HiloPrincipal hilo = new HiloPrincipal();
-		Token toke = new Token(aa.Getkeywords());
-		toke.Tokensa();
+		//aToken.getToken();
+		
+	
 		LeeXmlUrl url = new LeeXmlUrl();
 		url.LeeXmlUrl0();
 		url.LeeXmlUrl1();
@@ -46,7 +48,7 @@ public class ListaEnHilo {
 		//Ventana ventana = new Ventana();
 		//Lista.Insertar_Inicio(url.LeeXmlUrl0());
 		//Lista.Insertar_Inicio(url.LeeXmlUrl1());
-		Lista.Insertar_Inicio(toke.Tokensa();
+		Lista.Insertar_Inicio(aToken.gg());
 		//Lista.Insertar_Inicio(ventana.getPalabra());
 
 		while (true) {

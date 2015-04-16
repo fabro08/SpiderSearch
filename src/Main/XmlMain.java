@@ -17,11 +17,8 @@ import Parseo.Token;
  */
 public class XmlMain {
 	public static void main(String[] args) throws TagHijoNotFoundException, IOException {
-		//ListaEnHilo list = new ListaEnHilo();
-		NewParser aNewParser = new NewParser();
-		aNewParser.Data();
+		ListaEnHilo list = new ListaEnHilo();
 		
-		Token aToken = new Token(aNewParser.Getkeywords());
 		//System.out.println(aToken);
 		
 	}
