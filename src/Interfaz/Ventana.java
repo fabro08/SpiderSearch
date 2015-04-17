@@ -12,6 +12,7 @@ public class Ventana {
 	 public String getPalabra(){
 		 return palabra;
 		 
+
 	 }
 }	
 
