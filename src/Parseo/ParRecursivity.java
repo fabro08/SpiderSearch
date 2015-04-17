@@ -12,14 +12,22 @@ import org.jsoup.select.Elements;
 import Xml.LeerXmlConfig;
 
 public class ParRecursivity {
-	public String MaxRecursivity() throws IOException{
+	
+	Elements links;
+	Elements link;
+	String a=null;
+	public ParRecursivity() throws IOException{
         
 		Document doc = Jsoup.connect("http://www.javatpoint.com").get();  
-        Elements links = doc.select("a[href]");  
+        links = doc.select("a[href]");  
         for (Element link : links) {  
-            return  (link.attr("href"));  
+             System.out.println((link.attr("href")));  
         
         }
-		return   links.attr("href");
-}  
+		//return   links.attr("href");
+		
+}
+	public Object getMax(){
+		return link.attr("href");
+	}
 }  

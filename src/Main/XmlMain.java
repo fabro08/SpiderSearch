@@ -4,10 +4,8 @@ import java.io.IOException;
 
 import org.jespxml.excepciones.TagHijoNotFoundException;
 
-import Hilo.ListaEnHilo;
-import Parseo.MetaDatos;
-import Parseo.ParRecursivity;
-import Parseo.Token;
+import Hilo.HiloData;
+import Hilo.HiloRecursivity;
 
 /**
  * 
@@ -18,12 +16,18 @@ import Parseo.Token;
  */
 public class XmlMain {
 	public static void main(String[] args) throws TagHijoNotFoundException, IOException {
-	//ListaEnHilo list = new ListaEnHilo();
+		//HiloData aData = new HiloData();
+		HiloRecursivity aHiloRecursivity = new HiloRecursivity();
 		
+	//((ListaEnHilo list = new ListaEnHilo();
+	//HiloPrincipal a 
+	
 		//System.out.println(aToken);
 		
-		ParRecursivity aParRecursivity = new ParRecursivity();
-		System.out.println(aParRecursivity.MaxRecursivity());
+		//ParRecursivity aParRecursivity = new ParRecursivity();
+		//aParRecursivity.MaxRecursivity();
+		
+//		System.out.println(aParRecursivity.MaxRecursivity());
 //		NewParser aNewParser = new NewParser();
 //		aNewParser.Data();
 //		System.out.println(aNewParser.Getkeywords());

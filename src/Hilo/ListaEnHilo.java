@@ -3,7 +3,6 @@ package Hilo;
 import java.io.IOException;
 
 import org.jespxml.excepciones.TagHijoNotFoundException;
-import org.jespxml.modelo.Tag.Cantidad;
 
 import Xml.LeeXmlUrl;
 import Interfaz.Ventana;
@@ -11,18 +10,8 @@ import Listas.Lista_Circular_Enlazada;
 import Parseo.MetaDatos;
 import Parseo.Token;
 
-/**
- * Clase para crear un hilo.
- * 
- * @author Fabricio Miranda y Steven Ortiz
- * @version 1.3 - 1/4/2015
- */
-class HiloPrincipal extends Thread {
-	public HiloPrincipal() {
-		start();
-	}
 
-}
+
 
 /**
  * Clase para manejar un hilo con la lista
@@ -33,11 +22,13 @@ class HiloPrincipal extends Thread {
 public class ListaEnHilo {
 
 	public ListaEnHilo() throws TagHijoNotFoundException, IOException {
+		HiloPrincipal hilo = new HiloPrincipal();
+		
 		MetaDatos aNewParser = new MetaDatos();
 		aNewParser.Data();
 		
-		Token aToken = new Token(aNewParser.Getkeywords());
-		HiloPrincipal hilo = new HiloPrincipal();
+		Token aToken = new Token(aNewParser.GetTitulos());
+		
 		
 		
 		LeeXmlUrl url = new LeeXmlUrl();
@@ -52,9 +43,9 @@ public class ListaEnHilo {
 		//Lista.Insertar_Inicio(ventana.getPalabra());
 		Boolean cantidad = true;
 		while (cantidad==true) {
-			if(ventana.getPalabra()==aToken.CicloToken()){
-				cantidad = false;
-			}
+			//if(ventana.getPalabra()==aToken.CicloToken()){
+			//	cantidad = false;
+		//	}
 			
 			
 			Lista.Insertar_Inicio(aToken.CicloToken());
@@ -70,6 +61,7 @@ public class ListaEnHilo {
 			}
 		}
 
-	}
+	}}
 
-}
+
+
