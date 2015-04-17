@@ -16,7 +16,7 @@ public class Ventana {
 	 }
 	 /**Método para retornar la palabra escrita*/
 	 public String getPalabra(){
-		 return palabra; //Retorna la palabra
+		 return palabra; //Retorna la palabraa
 	 }
 }	
 
