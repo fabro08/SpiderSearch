@@ -6,6 +6,7 @@ import org.jespxml.excepciones.TagHijoNotFoundException;
 
 import Hilo.HiloData;
 import Hilo.HiloRecursivity;
+import Interfaz.Ventana;
 
 /**
  * 
@@ -17,8 +18,8 @@ import Hilo.HiloRecursivity;
 public class XmlMain {
 	public static void main(String[] args) throws TagHijoNotFoundException, IOException {
 		//HiloData aData = new HiloData();
-		HiloRecursivity aHiloRecursivity = new HiloRecursivity();
-		
+		//HiloRecursivity aHiloRecursivity = new HiloRecursivity();
+		//
 	//((ListaEnHilo list = new ListaEnHilo();
 	//HiloPrincipal a 
 	
@@ -34,5 +35,7 @@ public class XmlMain {
 //		
 //		Token aToken = new Token(aNewParser.Getkeywords());
 //		System.out.println(aToken.getCantidad());
+		Ventana aVentana = new Ventana();
+		System.out.println(aVentana.getPalabra());
 	}
 }

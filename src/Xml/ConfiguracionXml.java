@@ -16,49 +16,33 @@ import org.jespxml.modelo.Tag;
  * @version 1.1 1-04-15
  */
 public class ConfiguracionXml {
-	/*
-	 * Tags a usar para la creación del padre y los hijos
-	 */
-	Tag raiz = new Tag("Spider");
-	Tag maxthreads;
-	Tag recursivity;
-	Tag reindex;
-	/*
-	 * Constructor
-	 */
+	/** Tags a usar para la creación del padre y los hijos*/
+	private Tag raiz = new Tag("Spider");
+	private Tag maxthreads;
+	private Tag recursivity;
+	private Tag reindex;
+	
+	/** Constructor*/
 	public ConfiguracionXml() {
-		
-		
-
-		/*
-		 * Etiquetas
-		 */
+		/** Etiquetas*/
 		maxthreads = new Tag("maxthreads");
 		recursivity = new Tag("recursivity");
 		reindex = new Tag("reindex");
-
-		/*
-		 * Agreagando contenido a los hijos
-		 */
+		
+		/** Agreagando contenido a los hijos */
 		maxthreads.addContenido("10");
 		recursivity.addContenido("5");
 		reindex.addContenido("8");
 
-		/*
-		 * Estableciendo padre e hijos
-		 */
+		/**Estableciendo padre e hijos*/
 		raiz.addTagHijo(maxthreads);
 		raiz.addTagHijo(recursivity);
 		raiz.addTagHijo(reindex);
 
-		/*
-		 * Se genera un archivo XML.
-		 */
+		/**Se genera un archivo XML*/
 		JespXML xml = new JespXML(new File("Configuration.xml"), Encoding.UTF_8);
 
-		/*
-		 * Se rodea el archivp con excepciones.
-		 */
+		/** Se rodea el archivo con excepciones.*/
 		try {
 			xml.escribirXML(raiz);
 		} catch (TransformerConfigurationException e) {

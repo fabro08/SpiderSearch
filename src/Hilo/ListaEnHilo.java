@@ -27,7 +27,7 @@ public class ListaEnHilo {
 		MetaDatos aNewParser = new MetaDatos();
 		aNewParser.Data();
 		
-		Token aToken = new Token(aNewParser.GetTitulos());
+		Token aToken = new Token(aNewParser.GetData());
 		
 		
 		

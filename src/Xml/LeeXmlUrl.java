@@ -17,29 +17,19 @@ import org.xml.sax.SAXException;
  *@return ContenidoURL
  */
 public class LeeXmlUrl {
-	/*
-	 * Creacion del padre y los hijos
-	 */
-	Tag URL0, URL1, URL2, raiz;
+	/** Creacion del padre y los hijos*/
+	private Tag URL0, URL1, URL2, raiz;
 
-	/*
-	 * Creacion de la lectura de URL0
-	 */
+	/** Creacion de la lectura de URL0*/
 	public String LeeXmlUrl0() throws TagHijoNotFoundException {
-		/*
-		 * Lee el arhivo XML
-		 */
+		/** Lee el arhivo XML*/
 		JespXML xml = new JespXML("SpiderBot.xml");
 
-		/*
-		 * Se establece la variable a retornar.
-		 */
+		/** Se establece la variable a retornar.*/
 		String ContenidoUrl0 = null;
 
 		try {
-			/*
-			 * Lectura del XML
-			 */
+			/** Lectura del XML*/
 			Tag raiz = xml.leerXML();
 			URL0 = raiz.getTagHijoByName("URL0");
 			ContenidoUrl0 = URL0.getContenido();
@@ -54,31 +44,21 @@ public class LeeXmlUrl {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		/*
-		 * Retorno del resultado
-		 */
+		/** Retorno del resultado*/
 		return ContenidoUrl0;
 
 	}
 
-	/*
-	 * Creacion de la lectura de URL1
-	 */
+	/** Creacion de la lectura de URL1*/
 	public String LeeXmlUrl1() throws TagHijoNotFoundException {
-		/*
-		 * Lee el arhivo XML
-		 */
+		/** Lee el arhivo XML*/
 		JespXML xml = new JespXML("SpiderBot.xml");
 
-		/*
-		 * Se establece la variable a retornar.
-		 */
+		/** Se establece la variable a retornar.*/
 		String ContenidoUrl1 = null;
 
 		try {
-			/*
-			 * Lectura del XML
-			 */
+			/** Lectura del XML*/
 			Tag raiz = xml.leerXML();
 			URL1 = raiz.getTagHijoByName("URL1");
 			ContenidoUrl1 = URL1.getContenido();
@@ -94,29 +74,19 @@ public class LeeXmlUrl {
 			e.printStackTrace();
 		}
 
-		/*
-		 * Retorno del resultado
-		 */
+		/** Retorno del resultado*/
 		return ContenidoUrl1;
 	}
 
-	/*
-	 * Creacion de la lectura de URL2
-	 */
+	/** Creacion de la lectura de URL2*/
 	public String LeeXmlUrl2() throws TagHijoNotFoundException {
-		/*
-		 * Lee el arhivo XML
-		 */
+		/** Lee el arhivo XML*/
 		JespXML xml = new JespXML("SpiderBot.xml");
 
-		/*
-		 * Se establece la variable a retornar.
-		 */
+		/** Se establece la variable a retornar.*/
 		String ContenidoUrl2 = null;
 		try {
-			/*
-			 * Lectura del XML
-			 */
+			/** Lectura del XML*/
 			Tag raiz = xml.leerXML();
 			URL2 = raiz.getTagHijoByName("URl2");
 			ContenidoUrl2 = URL2.getContenido();
@@ -131,9 +101,7 @@ public class LeeXmlUrl {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		/*
-		 * Retorno del resultado
-		 */
+		/** Retorno del resultado*/
 		return ContenidoUrl2;
 	}
 }

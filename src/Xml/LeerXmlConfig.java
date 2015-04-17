@@ -16,30 +16,19 @@ import org.xml.sax.SAXException;
  *@return max, recur, reind
  */
 public class LeerXmlConfig {
-	/*
-	 * Creacion del padre y los hijos
-	 */
-	Tag maxthreads, recursivity, reindex;
+	/** Creacion del padre y los hijos*/
+	private Tag maxthreads, recursivity, reindex;
 
-	/*
-	 * Creacion de la lectura de Maxthreads
-	 */
+	/** Creacion de la lectura de Maxthreads*/
 	public String Maxthreads() throws TagHijoNotFoundException {
-
-		/*
-		 * Lee el arhivo XML
-		 */
+		/** Lee el arhivo XML */
 		JespXML xml = new JespXML("Configuration.xml");
 
-		/*
-		 * Se establece la variable a retornar.
-		 */
+		/** Se establece la variable a retornar.*/
 		String max = null;
 
 		try {
-			/*
-			 * Lectura del XML
-			 */
+			/** Lectura del XML*/
 			Tag raiz = xml.leerXML();
 			maxthreads = raiz.getTagHijoByName("maxthreads");
 			max = maxthreads.getContenido();
@@ -54,31 +43,21 @@ public class LeerXmlConfig {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		/*
-		 * Retorno del resultado
-		 */
+		/** Retorno del resultado*/
 		return max;
 
 	}
 
-	/*
-	 * Creacion de la lectura de Recursivity
-	 */
+	/** Creacion de la lectura de Recursivity*/
 	public String Recursivity() throws TagHijoNotFoundException {
-		/*
-		 * Lee el arhivo XML
-		 */
+		/** Lee el arhivo XML*/
 		JespXML xml = new JespXML("Configuration.xml");
 
-		/*
-		 * Se establece la variable a retornar.
-		 */
+		/** Se establece la variable a retornar.*/
 		String recur = null;
 
 		try {
-			/*
-			 * Lectura del XML
-			 */
+			/** Lectura del XML*/
 			Tag raiz = xml.leerXML();
 			recursivity = raiz.getTagHijoByName("recursivity");
 			recur = recursivity.getContenido();
@@ -93,27 +72,19 @@ public class LeerXmlConfig {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		/*
-		 * Retorno del resultado
-		 */
+		/** Retorno del resultado*/
 		return recur;
 	}
 
 	public String Reindex() throws TagHijoNotFoundException {
-		/*
-		 * Lee el arhivo XML
-		 */
+		/** Lee el arhivo XML*/
 		JespXML xml = new JespXML("Configuration.xml");
 
-		/*
-		 * Se establece la variable a retornar.
-		 */
+		/** Se establece la variable a retornar*/
 		String reind = null;
 
 		try {
-			/*
-			 * Lectura del XML
-			 */
+			/** Lectura del XML*/
 			Tag raiz = xml.leerXML();
 			reindex = raiz.getTagHijoByName("reindex");
 			reind = reindex.getContenido();
@@ -128,9 +99,7 @@ public class LeerXmlConfig {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		/*
-		 * Retorno del resultado
-		 */
+		/** Retorno del resultado*/
 		return reind;
 	}
 }

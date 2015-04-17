@@ -5,7 +5,6 @@ import java.io.IOException;
 import Listas.Lista_Circular_Enlazada;
 import Parseo.MetaDatos;
 import Parseo.ParRecursivity;
-import Parseo.Token;
 
 /**
  * Clase para crear un hilo.

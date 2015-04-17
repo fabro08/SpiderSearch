@@ -1,21 +1,17 @@
 package Parseo;
 
 import java.io.IOException;
-
-import org.jespxml.excepciones.TagHijoNotFoundException;
 import org.jsoup.Jsoup;  
 import org.jsoup.nodes.Document;  
 import org.jsoup.nodes.Element;  
-import org.jsoup.nodes.Node;
-import org.jsoup.select.Elements; 
+import org.jsoup.select.Elements;
 
-import Xml.LeerXmlConfig;
-
+/**Clase para Extraer links*/
 public class ParRecursivity {
 	
-	Elements links;
-	Elements link;
-	String a=null;
+	private Elements links;
+	private Elements link;
+	
 	public ParRecursivity() throws IOException{
         
 		Document doc = Jsoup.connect("http://www.javatpoint.com").get();  

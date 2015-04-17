@@ -18,43 +18,30 @@ import org.jespxml.modelo.Tag;
  */
 public class CrearXmlUrl {
 
-	/*
-	 * Creacion del padre y los hijos
-	 */
-	Tag raiz = new Tag("Targets");
-	Tag URL0;
-	Tag URL1;
-	Tag URL2;
-	/*
-	 * Constructor
-	 */
+	/**Creacion del padre y los hijos*/
+	private Tag raiz = new Tag("Targets");
+	private Tag URL0;
+	private Tag URL1;
+	private Tag URL2;
+	
+	/** Constructor*/
 	public CrearXmlUrl() {
-
-
-		/*
-		 * creacion de las etiquetas
-		 */
+		/** creacion de las etiquetas*/
 		URL0 = new Tag("URL0");
 		URL1 = new Tag("URL1");
 		URL2 = new Tag("URL2");
 
-		/*
-		 * Creacion del contenido
-		 */
+		/** Creacion del contenido*/
 		URL0.addContenido("http://www.google.com/");
 		URL1.addContenido("http://www.yahoo.com/");
 		URL2.addContenido("http://www.nacion.com/");
 
-		/*
-		 * Establecer Hijos
-		 */
+		/** Establecer Hijos*/
 		raiz.addTagHijo(URL0);
 		raiz.addTagHijo(URL1);
 		raiz.addTagHijo(URL2);
 
-		/*
-		 * Creacion del archivo XML de las URL
-		 */
+		/** Creacion del archivo XML de las URL*/
 		JespXML xml = new JespXML(new File("SpiderBot.xml"), Encoding.UTF_8);
 
 		try {

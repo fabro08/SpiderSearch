@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
  */
 public class Token {
 
-	StringTokenizer tokens;// Atributo
+	private StringTokenizer tokens;// Atributo
 
 	/**
 	 * Método para insertar una URL
