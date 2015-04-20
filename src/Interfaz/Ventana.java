@@ -12,6 +12,7 @@ public class Ventana {
 	 public Ventana(){
 	 
 	  palabra = JOptionPane.showInputDialog( "Buscar en la web" );//Se crea un nuevo panel
+
 	 
 	 }
 	 /**Método para retornar la palabra escrita*/

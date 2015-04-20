@@ -18,7 +18,8 @@ import org.xml.sax.SAXException;
  */
 public class LeeXmlUrl {
 	/** Creacion del padre y los hijos*/
-	private Tag URL0, URL1, URL2, raiz;
+	private Tag URL0, URL1, URL2;
+	 
 
 	/** Creacion de la lectura de URL0*/
 	public String LeeXmlUrl0() throws TagHijoNotFoundException {

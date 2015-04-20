@@ -1,6 +1,7 @@
 package Parseo;
 
 import java.io.IOException;
+
 import org.jsoup.Jsoup;  
 import org.jsoup.nodes.Document;  
 import org.jsoup.nodes.Element;  
@@ -11,18 +12,20 @@ public class ParRecursivity {
 	
 	private Elements links;
 	private Elements link;
+	private String parar = "parar";
 	
-	public ParRecursivity() throws IOException{
+	public String Recursivity() throws IOException{
         
-		Document doc = Jsoup.connect("http://www.javatpoint.com").get();  
+		Document doc = Jsoup.connect("http://www.nacion.com").get();  
         links = doc.select("a[href]");  
         for (Element link : links) {  
-             System.out.println((link.attr("href")));  
+           return links.attr("href");  
         
         }
-		//return   links.attr("href");
+ 
+        return parar;
 		
-}
+	}
 	public Object getMax(){
 		return link.attr("href");
 	}

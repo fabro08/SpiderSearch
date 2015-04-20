@@ -93,11 +93,34 @@ public class Lista_Circular_Enlazada {
      * @return (true o false)
      */
     public boolean Busca(Object ele){
+    	int ini=1;
     	Nodo recorrido=inicio;
-        while ((recorrido.siguiente!=inicio)&&(!(recorrido.obtenerValor().equals(ele)))) {
-           recorrido=recorrido.obtenerSiguiente();
+        while (ini<= Cuenta_Lista()) {
+        	if (ele.equals(recorrido.obtenerValor())){
+        		return true;
+        	}
+        	else{
+        		recorrido=recorrido.obtenerSiguiente();
+        	}
            
         }
-        return recorrido.obtenerValor().equals(ele);
+        return false;
     }
+
+	public Nodo getInicio() {
+		return inicio;
+	}
+
+	public void setInicio(Nodo inicio) {
+		this.inicio = inicio;
+	}
+
+	public Nodo getUltimo() {
+		return ultimo;
+	}
+
+	public void setUltimo(Nodo ultimo) {
+		this.ultimo = ultimo;
+	}
+    
 }

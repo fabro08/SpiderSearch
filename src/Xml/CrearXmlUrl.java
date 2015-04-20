@@ -32,8 +32,8 @@ public class CrearXmlUrl {
 		URL2 = new Tag("URL2");
 
 		/** Creacion del contenido*/
-		URL0.addContenido("http://www.google.com/");
-		URL1.addContenido("http://www.yahoo.com/");
+		URL0.addContenido("http://www.javatpoint.com/");
+		URL1.addContenido("http://9gag.com/");
 		URL2.addContenido("http://www.nacion.com/");
 
 		/** Establecer Hijos*/
