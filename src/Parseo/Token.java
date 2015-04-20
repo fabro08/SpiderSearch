@@ -21,7 +21,7 @@ public class Token {
 	 */
 
 	public Token(String name) {
-		tokens = new StringTokenizer(name, "\\");// Recibe un String y lo separa
+		tokens = new StringTokenizer(name, ",");// Recibe un String y lo separa
 											// por comas
 	}
 	/**
@@ -31,6 +31,7 @@ public class Token {
 
 		while (true) {// Mientras haya tokens
 			if(tokens.hasMoreTokens()){
+				
 				return tokens.nextToken();// Retorne el token siguiente
 		}
 			else{

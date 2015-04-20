@@ -92,7 +92,7 @@ public class Lista_Circular_Enlazada {
      * @param ele (dato a buscar)
      * @return (true o false)
      */
-    public boolean Busca(Object ele){
+    public boolean Busca(String ele){
     	int ini=1;
     	Nodo recorrido=inicio;
         while (ini<= Cuenta_Lista()) {
